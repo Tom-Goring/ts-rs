@@ -36,6 +36,7 @@ serde-json-impl = ["serde_json"]
 no-serde-warnings = ["ts-rs-macros/no-serde-warnings"]
 import-esm = []
 tokio-impl = ["tokio"]
+ustr-impl = ["ustr"]
 
 [dev-dependencies]
 serde = { version = "1.0", features = ["derive"] }

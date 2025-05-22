@@ -1104,6 +1104,9 @@ impl_shadow!(as Vec<T>: impl<T: TS, const N: usize> TS for heapless::Vec<T, N>);
 #[cfg(feature = "semver-impl")]
 impl_primitives! { semver::Version => "string" }
 
+#[cfg(feature = "ustr-impl")]
+impl_primitives! { ustr::Ustr => "string" }
+
 #[cfg(feature = "bytes-impl")]
 mod bytes {
     use super::TS;
