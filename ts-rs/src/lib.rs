@@ -1110,6 +1110,9 @@ impl_primitives! { ustr::Ustr => "string" }
 #[cfg(feature = "ordermap-impl")]
 impl_shadow!(as HashMap<K, V>: impl<K: TS, V: TS> TS for ordermap::OrderMap<K, V>);
 
+#[cfg(feature = "ustr-ordermap-impl")]
+impl_shadow!(as HashMap<K, V>: impl<K: TS, V: TS> TS for ordermap::OrderMap<K, V, std::hash::BuildHasherDefault<ustr::IdentityHasher>>);
+
 #[cfg(feature = "bytes-impl")]
 mod bytes {
     use super::TS;

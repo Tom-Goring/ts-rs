@@ -38,6 +38,7 @@ import-esm = []
 tokio-impl = ["tokio"]
 ustr-impl = ["ustr"]
 ordermap-impl = ["ordermap"]
+ustr-ordermap-impl = ["ustr", "ordermap"]
 
 [dev-dependencies]
 serde = { version = "1.0", features = ["derive"] }
