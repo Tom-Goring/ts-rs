@@ -824,6 +824,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "ordermap"
+version = "0.5.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f80a48eb68b6a7da9829b8b0429011708f775af80676a91063d023a66a656106"
+dependencies = [
+ "indexmap",
+]
+
+[[package]]
 name = "parking_lot"
 version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1493,6 +1502,7 @@ dependencies = [
  "heapless",
  "indexmap",
  "ordered-float",
+ "ordermap",
  "semver",
  "serde",
  "serde_json",

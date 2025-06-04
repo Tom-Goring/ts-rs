@@ -37,6 +37,7 @@ no-serde-warnings = ["ts-rs-macros/no-serde-warnings"]
 import-esm = []
 tokio-impl = ["tokio"]
 ustr-impl = ["ustr"]
+ordermap-impl = ["ordermap"]
 
 [dev-dependencies]
 serde = { version = "1.0", features = ["derive"] }
@@ -63,3 +64,4 @@ ordered-float = { version = ">= 3, < 5", optional = true }
 serde_json = { version = "1", optional = true }
 tokio = { version = "1", features = ["sync"], optional = true }
 ustr = { version = "*", optional = true }
+ordermap = { version = "*", optional = true }

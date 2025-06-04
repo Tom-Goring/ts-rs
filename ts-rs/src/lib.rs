@@ -1107,6 +1107,9 @@ impl_primitives! { semver::Version => "string" }
 #[cfg(feature = "ustr-impl")]
 impl_primitives! { ustr::Ustr => "string" }
 
+#[cfg(feature = "ordermap-impl")]
+impl_shadow!(as HashMap<K, V>: impl<K: TS, V: TS> TS for ordermap::OrderMap<K, V>);
+
 #[cfg(feature = "bytes-impl")]
 mod bytes {
     use super::TS;
